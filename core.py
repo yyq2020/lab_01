@@ -105,6 +105,7 @@ class air_quality():
 def aqi_classify(aqi:int):
     aqi_level = ["Good(优)","Moderate(良)","Unhealthy for Sensitive Groups(轻度污染)",\
                  "Unhealthy(中度污染)","Very Unhealthy(重度污染)","Hazardous(严重污染)"]
+    # get air quality 
     if 0 <= aqi and aqi<= 50:
         return aqi_level[0]
     elif 50 < aqi and aqi<= 100:
